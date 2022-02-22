@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		944DEE7B27C4065200407612 /* SpaceXDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEE7A27C4065200407612 /* SpaceXDemoApp.swift */; };
-		944DEE7D27C4065200407612 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEE7C27C4065200407612 /* ContentView.swift */; };
+		944DEE7D27C4065200407612 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEE7C27C4065200407612 /* MainView.swift */; };
 		944DEE7F27C4065400407612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944DEE7E27C4065400407612 /* Assets.xcassets */; };
 		944DEE8227C4065400407612 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944DEE8127C4065400407612 /* Preview Assets.xcassets */; };
 		944DEE8C27C4065400407612 /* SpaceXDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEE8B27C4065400407612 /* SpaceXDemoTests.swift */; };
 		944DEE9627C4065400407612 /* SpaceXDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEE9527C4065400407612 /* SpaceXDemoUITests.swift */; };
 		944DEE9827C4065400407612 /* SpaceXDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEE9727C4065400407612 /* SpaceXDemoUITestsLaunchTests.swift */; };
-		944DEEA627C40A3F00407612 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEA527C40A3F00407612 /* Launch.swift */; };
-		944DEEA827C40CA300407612 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEA727C40CA300407612 /* Rocket.swift */; };
+		944DEEA627C40A3F00407612 /* LaunchDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEA527C40A3F00407612 /* LaunchDataDTO.swift */; };
+		944DEEA827C40CA300407612 /* RocketDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEA727C40CA300407612 /* RocketDataDTO.swift */; };
+		944DEEAD27C4319B00407612 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEAC27C4319B00407612 /* MainViewModel.swift */; };
+		944DEEB127C4323F00407612 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEB027C4323F00407612 /* Rocket.swift */; };
+		944DEEB427C43B0500407612 /* Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEB327C43B0500407612 /* Queries.swift */; };
+		944DEEB627C43C3F00407612 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEB527C43C3F00407612 /* Launch.swift */; };
+		944DEEB827C43CDB00407612 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEB727C43CDB00407612 /* LaunchView.swift */; };
+		944DEEBA27C43FFE00407612 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEB927C43FFE00407612 /* LaunchViewModel.swift */; };
+		944DEEBC27C4B23A00407612 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEBB27C4B23A00407612 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,7 @@
 /* Begin PBXFileReference section */
 		944DEE7727C4065200407612 /* SpaceXDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944DEE7A27C4065200407612 /* SpaceXDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXDemoApp.swift; sourceTree = "<group>"; };
-		944DEE7C27C4065200407612 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		944DEE7C27C4065200407612 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		944DEE7E27C4065400407612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		944DEE8127C4065400407612 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		944DEE8727C4065400407612 /* SpaceXDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,8 +53,15 @@
 		944DEE9127C4065400407612 /* SpaceXDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		944DEE9527C4065400407612 /* SpaceXDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXDemoUITests.swift; sourceTree = "<group>"; };
 		944DEE9727C4065400407612 /* SpaceXDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		944DEEA527C40A3F00407612 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
-		944DEEA727C40CA300407612 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		944DEEA527C40A3F00407612 /* LaunchDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDataDTO.swift; sourceTree = "<group>"; };
+		944DEEA727C40CA300407612 /* RocketDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDataDTO.swift; sourceTree = "<group>"; };
+		944DEEAC27C4319B00407612 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		944DEEB027C4323F00407612 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		944DEEB327C43B0500407612 /* Queries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queries.swift; sourceTree = "<group>"; };
+		944DEEB527C43C3F00407612 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		944DEEB727C43CDB00407612 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		944DEEB927C43FFE00407612 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		944DEEBB27C4B23A00407612 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +112,10 @@
 		944DEE7927C4065200407612 /* SpaceXDemo */ = {
 			isa = PBXGroup;
 			children = (
-				944DEEA427C4096100407612 /* Models */,
+				944DEEB227C43ADE00407612 /* Network */,
+				944DEEAE27C4322500407612 /* Domain */,
+				944DEEAB27C4318200407612 /* Presentation */,
 				944DEE7A27C4065200407612 /* SpaceXDemoApp.swift */,
-				944DEE7C27C4065200407612 /* ContentView.swift */,
 				944DEE7E27C4065400407612 /* Assets.xcassets */,
 				944DEE8027C4065400407612 /* Preview Content */,
 			);
@@ -132,13 +147,67 @@
 			path = SpaceXDemoUITests;
 			sourceTree = "<group>";
 		};
-		944DEEA427C4096100407612 /* Models */ = {
+		944DEEA427C4096100407612 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				944DEEA527C40A3F00407612 /* Launch.swift */,
-				944DEEA727C40CA300407612 /* Rocket.swift */,
+				944DEEA527C40A3F00407612 /* LaunchDataDTO.swift */,
+				944DEEA727C40CA300407612 /* RocketDataDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		944DEEA927C4317500407612 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				944DEE7C27C4065200407612 /* MainView.swift */,
+				944DEEAC27C4319B00407612 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		944DEEAA27C4317D00407612 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				944DEEB727C43CDB00407612 /* LaunchView.swift */,
+				944DEEB927C43FFE00407612 /* LaunchViewModel.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		944DEEAB27C4318200407612 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				944DEEAA27C4317D00407612 /* Launch */,
+				944DEEA927C4317500407612 /* Main */,
+				944DEEBB27C4B23A00407612 /* BaseViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		944DEEAE27C4322500407612 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				944DEEAF27C4322A00407612 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		944DEEAF27C4322A00407612 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				944DEEB027C4323F00407612 /* Rocket.swift */,
+				944DEEB527C43C3F00407612 /* Launch.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		944DEEB227C43ADE00407612 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				944DEEA427C4096100407612 /* DTO */,
+				944DEEB327C43B0500407612 /* Queries.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +340,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944DEE7D27C4065200407612 /* ContentView.swift in Sources */,
-				944DEEA627C40A3F00407612 /* Launch.swift in Sources */,
+				944DEEAD27C4319B00407612 /* MainViewModel.swift in Sources */,
+				944DEEBC27C4B23A00407612 /* BaseViewModel.swift in Sources */,
+				944DEE7D27C4065200407612 /* MainView.swift in Sources */,
+				944DEEB627C43C3F00407612 /* Launch.swift in Sources */,
+				944DEEBA27C43FFE00407612 /* LaunchViewModel.swift in Sources */,
+				944DEEB427C43B0500407612 /* Queries.swift in Sources */,
+				944DEEA627C40A3F00407612 /* LaunchDataDTO.swift in Sources */,
+				944DEEB127C4323F00407612 /* Rocket.swift in Sources */,
 				944DEE7B27C4065200407612 /* SpaceXDemoApp.swift in Sources */,
-				944DEEA827C40CA300407612 /* Rocket.swift in Sources */,
+				944DEEB827C43CDB00407612 /* LaunchView.swift in Sources */,
+				944DEEA827C40CA300407612 /* RocketDataDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
