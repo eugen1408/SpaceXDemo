@@ -26,10 +26,10 @@ struct MainView: View {
                     }
                 default:
                     ProgressView()
-                    Text("Загрузка списка рокет...")
                 }
-
             }
+            .edgesIgnoringSafeArea(.top)
+            .navigationBarHidden(true)
         }
         .task {
             await model.loadRockets()
@@ -38,27 +38,19 @@ struct MainView: View {
 
     var rocketsView: some View {
         TabView {
-            ForEach(model.rockets) { rocket in
-                VStack {
-                    Text(rocket.id).textSelection(.enabled)
-                    Text(rocket.name)
-
-                    NavigationLink {
-                        LaunchView(model: LaunchViewModel(rocketId: rocket.id))
-                            .navigationTitle(rocket.name)
-                    } label: {
-                        Text("Посмотреть запуски")
-                    }
-                }
-
+            ForEach(model.rockets) {
+                RocketView(rocket: $0)
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .always))
+        .indexViewStyle(.page(backgroundDisplayMode: .always))
+
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .preferredColorScheme(.dark)
     }
 }

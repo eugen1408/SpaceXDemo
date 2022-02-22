@@ -25,10 +25,10 @@ struct LaunchView: View {
                 }
             default:
                 ProgressView()
-                Text("Загрузка списка запусков...")
             }
 
         }
+
         .task {
             await model.loadLaunches()
         }
@@ -39,17 +39,51 @@ struct LaunchView: View {
     var launchesView: some View {
         if model.launches.isEmpty {
             Text("У этой ракеты пока не было запусков.")
-        }
-        else {
-            List(model.launches) {
-                Text($0.name)
+        } else {
+            ScrollView {
+                LazyVStack(alignment: .leading, spacing: 16) {
+                    ForEach(model.launches) {
+                        LaunchCellView(launch: $0)
+                    }
+                }
             }
         }
     }
 }
 
+struct LaunchCellView: View {
+    let launch: Launch
+
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Text(launch.name)
+                Text(launch.date)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+            Spacer()
+            if let success = launch.success {
+                Text("🚀")
+                    .rotationEffect(success ? .zero : .degrees(180))
+            } else {
+                Text("⏳")
+            }
+        }
+        .padding(24)
+        .background(Color(.secondarySystemBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 24))
+        .padding(.horizontal)
+    }
+}
+
 struct LaunchView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchView(model: LaunchViewModel(rocketId: "5e9d0d95eda69955f709d1eb"))
+        LaunchCellView(launch: Launch(dto: LaunchDTO(
+            id: "abc",
+            success: true,
+            name: "Name",
+            dateLocal: Date()
+        )))
     }
 }

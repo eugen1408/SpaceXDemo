@@ -23,6 +23,10 @@
 		944DEEB827C43CDB00407612 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEB727C43CDB00407612 /* LaunchView.swift */; };
 		944DEEBA27C43FFE00407612 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEB927C43FFE00407612 /* LaunchViewModel.swift */; };
 		944DEEBC27C4B23A00407612 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DEEBB27C4B23A00407612 /* BaseViewModel.swift */; };
+		94CAB6F927C518B30045337A /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAB6F827C518B30045337A /* RoundedCorner.swift */; };
+		94CAB6FB27C527F40045337A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAB6FA27C527F40045337A /* SettingsView.swift */; };
+		94CAB6FD27C528120045337A /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAB6FC27C528120045337A /* RocketView.swift */; };
+		94CAB6FF27C530EE0045337A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAB6FE27C530EE0045337A /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		944DEEB727C43CDB00407612 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		944DEEB927C43FFE00407612 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		944DEEBB27C4B23A00407612 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		94CAB6F827C518B30045337A /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		94CAB6FA27C527F40045337A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		94CAB6FC27C528120045337A /* RocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketView.swift; sourceTree = "<group>"; };
+		94CAB6FE27C530EE0045337A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,8 @@
 			children = (
 				944DEE7C27C4065200407612 /* MainView.swift */,
 				944DEEAC27C4319B00407612 /* MainViewModel.swift */,
+				94CAB6FA27C527F40045337A /* SettingsView.swift */,
+				94CAB6FC27C528120045337A /* RocketView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -177,6 +187,7 @@
 		944DEEAB27C4318200407612 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				94CAB6F727C518A70045337A /* Helpers */,
 				944DEEAA27C4317D00407612 /* Launch */,
 				944DEEA927C4317500407612 /* Main */,
 				944DEEBB27C4B23A00407612 /* BaseViewModel.swift */,
@@ -208,6 +219,15 @@
 				944DEEB327C43B0500407612 /* Queries.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		94CAB6F727C518A70045337A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				94CAB6F827C518B30045337A /* RoundedCorner.swift */,
+				94CAB6FE27C530EE0045337A /* Settings.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,17 +360,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CAB6F927C518B30045337A /* RoundedCorner.swift in Sources */,
 				944DEEAD27C4319B00407612 /* MainViewModel.swift in Sources */,
 				944DEEBC27C4B23A00407612 /* BaseViewModel.swift in Sources */,
 				944DEE7D27C4065200407612 /* MainView.swift in Sources */,
 				944DEEB627C43C3F00407612 /* Launch.swift in Sources */,
 				944DEEBA27C43FFE00407612 /* LaunchViewModel.swift in Sources */,
+				94CAB6FD27C528120045337A /* RocketView.swift in Sources */,
 				944DEEB427C43B0500407612 /* Queries.swift in Sources */,
 				944DEEA627C40A3F00407612 /* LaunchDataDTO.swift in Sources */,
+				94CAB6FF27C530EE0045337A /* Settings.swift in Sources */,
 				944DEEB127C4323F00407612 /* Rocket.swift in Sources */,
 				944DEE7B27C4065200407612 /* SpaceXDemoApp.swift in Sources */,
 				944DEEB827C43CDB00407612 /* LaunchView.swift in Sources */,
 				944DEEA827C40CA300407612 /* RocketDataDTO.swift in Sources */,
+				94CAB6FB27C527F40045337A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

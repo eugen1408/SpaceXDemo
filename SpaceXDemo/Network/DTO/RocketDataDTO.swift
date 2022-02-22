@@ -14,7 +14,7 @@ struct RocketDataDTO: Decodable {
 
 // MARK: - RocketDTO
 struct RocketDTO: Decodable {
-    let height, diameter: DiameterDTO
+    let height, diameter: LengthDTO
     let mass: MassDTO
     let firstStage, secondStage: StageDTO
     let payloadWeights: [PayloadWeightDTO]
@@ -36,8 +36,8 @@ struct RocketDTO: Decodable {
     }
 }
 
-// MARK: - DiameterDTO
-struct DiameterDTO: Decodable {
+// MARK: - LengthDTO
+struct LengthDTO: Decodable {
     let meters, feet: Double
 }
 

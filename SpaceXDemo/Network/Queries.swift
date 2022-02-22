@@ -7,6 +7,8 @@
 
 import Foundation
 
+// TODO: сериализовать из объектов
+
 enum Queries {
     static let rockets = """
     {
